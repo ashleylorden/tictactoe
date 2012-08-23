@@ -37,6 +37,9 @@ var refresh = function(response){
 	if (response.message) {
 		show_message(response.message);
 	}
+	else {
+		$('div.message').html("<p>Your move.</p>");
+	}
 };
 
 $(document).ready(function(){
@@ -63,11 +66,10 @@ $(document).ready(function(){
 			return;
 		}
 		if (! $(this).hasClass("evil") && ! $(this).hasClass("good")) {
+			$('div.message').html("<p>Okay, it might take me a few seconds to come up with a response to that.</p>");
 			// move
 			space = $(this).attr('id').substr(5);
 			$.getJSON('/tictactoe', {"space": space}, refresh);
-		} else {
-			// cant change
 		}
 	});
 });
