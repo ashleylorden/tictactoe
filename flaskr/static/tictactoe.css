@@ -1,0 +1,110 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+div#head {
+	width: 100%;
+	height: 150px;
+	border-bottom: 5px solid black;
+}
+
+h1 {
+	text-align: center;
+	font-size: 60px;
+}
+
+span.red {
+	color: red;
+	text-shadow: 2px 2px black;
+}
+
+div.options {
+	width: 450px;
+	height: 180px;
+	margin: 30px auto;
+	border: 2px solid gray;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+}
+
+img.choice {
+	width: 120px;
+	height: 120px;
+	margin: 30px 15px;
+	border: 1px solid gray;
+}
+
+img.choice:hover {
+	margin: 28px 13px;
+	border: 3px solid black;
+}
+
+img.choice.right {
+	margin-left: 97px;
+}
+
+p.vs {
+	text-align: center;
+	font-size: 30px;
+	float: left;
+	position: relative;
+	width: 30px;
+	left: 210px;
+	height: 36px;
+	top: 72px;
+	margin: 0;
+	padding: 0;
+}
+
+div#gameboard {
+	width: 398px;
+	height: 398px;
+	margin: 30px auto;
+}
+
+div#gameboard > table {
+	border: 1px solid black;
+	border-spacing: 5px;
+}
+
+div#gameboard > table td {
+	width: 120px;
+	height: 120px;
+	border: 1px solid black;
+}
+
+div.message {
+	background-color: #D2D2D2;
+	width: 100%;
+}
+
+div.message p {
+	padding: 10px;
+	font-size: 24px;
+	text-align: center;
+}
+
+td.space img {
+	display: none;
+}
+
+td.space.good img.good {
+	display: block;
+}
+td.space.evil img.evil {
+	display: block;
+}
+
+div#again {
+	display: none;
+	text-align: center;
+}
+
+button#playbutton {
+	margin-bottom: 15px;
+	padding: 5px;
+	font-size: 18px;
+	border: 2px solid red;
+}

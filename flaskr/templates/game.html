@@ -1,0 +1,54 @@
+{% extends "tictactoe.html" %}
+{% block content %}
+<div id="gameboard">
+	<table>
+		<tr>
+			<td id="space0" class="space">
+				<img class="good" src="/static/images/good.png">
+				<img class="evil" src="/static/images/evil.png">
+			</td>
+			<td id="space1" class="space">
+				<img class="good" src="/static/images/good.png">
+				<img class="evil" src="/static/images/evil.png">
+			</td>
+			<td id="space2" class="space">
+				<img class="good" src="/static/images/good.png">
+				<img class="evil" src="/static/images/evil.png">
+			</td>
+		</tr>
+		<tr>
+			<td id="space3" class="space">
+				<img class="good" src="/static/images/good.png">
+				<img class="evil" src="/static/images/evil.png">
+			</td>
+			<td id="space4" class="space">
+				<img class="good" src="/static/images/good.png">
+				<img class="evil" src="/static/images/evil.png">
+			</td>
+			<td id="space5" class="space">
+				<img class="good" src="/static/images/good.png">
+				<img class="evil" src="/static/images/evil.png">
+			</td>
+		</tr>
+		<tr>
+			<td id="space6" class="space">
+				<img class="good" src="/static/images/good.png">
+				<img class="evil" src="/static/images/evil.png">
+			</td>
+			<td id="space7" class="space">
+				<img class="good" src="/static/images/good.png">
+				<img class="evil" src="/static/images/evil.png">
+			</td>
+			<td id="space8" class="space">
+				<img class="good" src="/static/images/good.png">
+				<img class="evil" src="/static/images/evil.png">
+			</td>
+		</tr>
+	</table>
+</div>
+<div class="message">
+</div>
+<div id="again">
+	<a href="{{url_for("start")}}"><button id="playbutton">Play again!</button></a>
+</div>
+{% endblock %}

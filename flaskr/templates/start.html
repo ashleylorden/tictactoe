@@ -1,0 +1,12 @@
+{% extends "tictactoe.html" %}
+{% block content %}
+<div class="options">
+	<a href="{{url_for("game", character="o")}}">
+		<img id="good" class="choice" src="static/images/good.png">
+	</a>
+	<p class="vs">vs</p>
+	<a href="{{url_for("game", character="x")}}">
+		<img id="evil" class="choice right" src="static/images/evil.png">
+	</a>
+</div>
+{% endblock %}
