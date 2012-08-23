@@ -2,6 +2,7 @@ from flask import Flask, request, url_for, \
      render_template, jsonify, session
 from tictactoe import *
 import json
+import os
 
 app = Flask(__name__)
 app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
@@ -43,4 +44,5 @@ def move(space=''):
 	return json.dumps(my_board)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+	port = int(os.environ.get('PORT', 5000))
+	app.run(host='0.0.0.0', port=port)
